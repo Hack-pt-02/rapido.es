@@ -1,112 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
-    
-    * {
-        font-family: 'Inter', sans-serif;    
-    }
 
+* {
+    font-family: 'Inter', sans-serif;    
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.hero {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background:url('./media/fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
     .hero {
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         position: relative;
-        background-image: url('./media/fondo1.jpg');
+        background:url('./media/fondo.jpeg');
         background-repeat: no-repeat;
-        background-size: 75%;
+        background-size: 70%;
         background-position: center;
     }
+}
 
-    .hero_logo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 5%;
-        transition: 0.4s ease-in-out;
-        opacity: 0;
-    }
+.hero_logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    opacity: 0;
+}
 
-    .hero_login {
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding: 5%;
-        transition: 0.4s ease-in-out;
-        opacity: 0;
-    }
+.hero_login {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    opacity: 0;
+}
 
+.hero_title {
+    position: absolute;
+    bottom: 48%;
+    right: 10%;
+    opacity: 0;
+}
+
+.hero_description {
+    position: absolute;
+    bottom: 43%;
+    right: 10%;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
     .hero_title {
         position: absolute;
         bottom: 48%;
-        right: 25%;
+        left: 10%;
         opacity: 0;
     }
-
+    
     .hero_description {
         position: absolute;
-        bottom: 45%;
-        right: 25%;
+        bottom: 30%;
+        left: 10%;
         opacity: 0;
     }
+}
 
-    .hero_items {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        padding: 5%;
-        transition: 0.4s ease-in-out;
-    }
+.hero_items {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
 
-    .hero_animation .hero_logo {
-        color: coral;
-        padding: 2%;
-    }
+.hero_animation .hero_logo {
+    color: coral;
+    padding: 2%;
+}
 
-    .hero_animation .hero_items {
-        color: coral;
-        padding: 2%;
-    }
+.hero_animation .hero_items {
+    color: coral;
+    padding: 2%;
+}
 
-    .hero_animation .hero_login {
-        color: coral;
-        padding: 2%;
-    }
+.hero_animation .hero_login {
+    color: coral;
+    padding: 2%;
+}
 
 
-    .cover {
-        height: 60vh;
-        width: 100%;
-        background-image: url('./media/cover-4.jpeg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+.cover {
+    height: 60vh;
+    width: 100%;
+    background-image: url('./media/cover-4.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+#registerSidebar {
+    height: 100vh;
+    width: 50%;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+@media (max-width: 768px) {
     #registerSidebar {
         height: 100vh;
-        width: 50%;
+        width: 100%;
         background-color: whitesmoke;
         position: fixed;
         top: 0;
         right: -100%;
         z-index: 1;
-        transition: 0.5s;
+        transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
     }
+}
 
-    .active {
-        right: 0% !important;
-
-    }
-
-    @media (max-width: 750px){
-        .hero_title {
-            position: absolute;
-            bottom: 48%;
-            left: 0;
-            opacity: 0;
-        }
-        .hero_description {
-            position: absolute;
-            bottom: 30%;
-            left: 0;
-            opacity: 0;
-        }
+.active {
+    right: 0% !important;
     
-    }
+}
+
+.card-search {
+    background-color: #fff;
+}
+
