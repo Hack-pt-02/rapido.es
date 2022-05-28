@@ -1,0 +1,51 @@
+[
+    {
+      "labels": 70,
+      "adult": 13,
+      "spoof": 12,
+      "medical": 5,
+      "violence": 7,
+      "racy": 3
+    },
+    {
+      "labels": 80,
+      "adult": 12,
+      "spoof": 11,
+      "medical":10,
+      "violence": 9,
+      "racy": 8
+    },
+    {
+      "labels": 75,
+      "adult": 21,
+      "spoof": 22,
+      "medical": 23,
+      "violence": 12,
+      "racy": 14
+    },
+    {
+      "labels": 81,
+      "adult": 10,
+      "spoof": 10,
+      "medical": 5,
+      "violence": 12,
+      "racy": 14
+    },
+    {
+      "labels": 77,
+      "adult": 5,
+      "spoof": 6,
+      "medical": 9,
+      "violence": 8,
+      "racy": 7
+    },
+    {
+      "labels": 21,
+      "adult": 12,
+      "spoof": 24,
+      "medical": 23,
+      "violence": 21,
+      "racy": 43
+    }
+  ]
+  
