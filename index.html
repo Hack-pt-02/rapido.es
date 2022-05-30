@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
+
     <!--  cdn iconos bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
@@ -104,12 +104,35 @@
                     Ponte a prueba y acierta con estos productos</p>
             </div>
             <div class="col-12 col-md-10">
-               
-                
+
+
             </div>
-          
+
         </div>
     </div>
+    <!--  mostrar categorías -->
+      
+    <div class="container my-5 py-5">
+        <div class="col-12 text-center">
+            <p>Busca entre estas categorias el articulo que necesites</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 ">
+                <div id="category_wrapper" class="row justify-content-center ">
+                    <!--  <div class="col-12 col-md-4 ">
+                        <div class="card card_category mx-auto border-0 rounded-0 shadow ">
+                            <div class="card-body text-center ">
+                              <h5 class="card-title mb-0">Categoría</h5>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 
 
     <div class="container my-5 py-5">
@@ -157,14 +180,40 @@
         </div>
     </div>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <!-- CDN a la biblioteca gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="./main.js"></script>
+    <!--  Javascript Home Page -->
+    <script>
+        //leer anuncios dentro de anuncios.json **
+        //obtener los datos **
+        //filtrar las categorías 
+        //crear columna basándonos en las categorías que tenemos
+
+        fetch("./anuncios.json").then(response => response.json())
+            .then(datos => {
+                let categorias = datos.map(el => el.category_name)
+                let sinRepticiones = new Set(categorias)
+                let conversorArray = Array.from(sinRepticiones)
+                let category_wrapper = document.querySelector("#category_wrapper")
+                conversorArray.forEach(element => {
+                    let col = document.createElement("div")
+                    col.classList.add("col-12", "col-md-6","mb-4")
+                    col.innerHTML = `  
+                        <div class="card card_category mx-auto border-0 rounded-0 shadow ">
+                           <div class="card-body text-center ">
+                             <h5 class="card-title mb-0">${element}</h5>
+                            </div>
+                        </div>
+             
+             `
+            category_wrapper.appendChild(col)
+                })
+            })
+    </script>
 
 </body>
 
