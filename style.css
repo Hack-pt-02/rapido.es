@@ -141,11 +141,17 @@
     background-color: #fff;
 }
 
+.card-features {
+    border-left: 2px solid coral !important;
+}
+
 .card_category{
     border-bottom: 3px solid coral !important;
     width: 12rem;
     cursor: pointer;
 }
+
+
 
 .card_timer{
     width: 120px;
