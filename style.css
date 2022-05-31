@@ -34,6 +34,7 @@
     padding: 5%;
     transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
     opacity: 0;
+    z-index: 9999;
 }
 
 .hero_login {
@@ -43,6 +44,7 @@
     padding: 5%;
     transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
     opacity: 0;
+    z-index: 9999;
 }
 
 .hero_title {
@@ -50,6 +52,22 @@
     bottom: 48%;
     right: 10%;
     opacity: 0;
+}
+
+.hiro-callToAction {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .hiro-callToAction {
+        position: absolute;
+        bottom: 15%;
+        left: 35%;
+        opacity: 0;
+    }
 }
 
 .hero_description {
@@ -81,6 +99,7 @@
     left: 0;
     padding: 5%;
     transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    z-index: 9999;
 }
 
 .hero_animation .hero_logo {
@@ -102,12 +121,20 @@
 .cover {
     height: 60vh;
     width: 100%;
-    background-image: url('./media/cover-4.jpeg');
+    background-image: url('./media/fondo2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    color: coral;
 }
-
+.texto-subir {
+    margin-top: 100px;
+    text-shadow: 3px 3px 8px black;
+}
+.btn-subir {
+    background-color: coral;
+    color: white;
+}
 #registerSidebar {
     height: 100vh;
     width: 50%;
@@ -178,3 +205,7 @@
     color: coral;
 }
 
+.blue-links {
+    text-decoration: none;
+    color: black;
+}

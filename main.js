@@ -62,4 +62,10 @@
             stagger: 0.3
         });
         
-        
+        gsap.to(".hiro-callToAction", {
+            y: 20,
+            duration: 1.5,
+            opacity: 1,
+            delay: 1,
+            ease: Power3.easeOut
+        })
