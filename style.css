@@ -146,13 +146,26 @@
 }
 
 .card_category{
-    border-bottom: 3px solid coral !important;
     width: 12rem;
     cursor: pointer;
 }
 
+.subrayado{
+    /* border-bottom: 3px solid coral !important; */
+    background-image: linear-gradient(coral, coral);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: .2s;
+      
 
-
+}
+.subrayado:hover, .subrayado:focus{
+    background-size: 100% 2px;
+    transition: .3s;
+    
+}
+    
 .card_timer{
     width: 120px;
     height: 120px;
