@@ -5,26 +5,43 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <!--  cdn iconos bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
+    
     <!-- favicon empresa -->
     <link rel="shortcut icon" href="./media/arrow-right.png" type="image/x-icon">
-
+    
     <!-- Style personal -->
     <link rel="stylesheet" href="./style.css">
-
+    
     <!-- titulo empresa -->
     <title>Rapido,shop online</title>
+    
+    <style>
+        .nav-pills .nav-link {
+            background: 0 0;
+            border: 0;
+            border-radius: 0.25rem;
+            color: black;
+        }
+        
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: coral;
+        }
+
+
+    </style>
+    
 </head>
 
 <body>
-
+    
     <!-- side bar register -->
     <div id="registerSidebar">
         <div class="container h-100">
@@ -37,12 +54,12 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Username</label>
                             <input type="text" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -56,14 +73,14 @@
                             <button type="submit" class="btn btn-outline-dark mt-2">Registrate</button>
                             <button type="submit" class="btn btn-outline-warning mt-2">Registrate admin</button>
                         </div>
-
+                        
                     </form>
                 </div>
-
+                
             </div>
         </div>
     </div>
-
+    
     <!-- above the fold -->
     <div class="hero">
         <div class="hero_logo">
@@ -81,7 +98,7 @@
             <a id="toggleLogin" href="" class="text-decoration-none text-reset fw-bold mb-3">LOGIN</a>
             <a id="toggleRegister" href="" class="text-decoration-none text-reset fw-bold mb-3">REGISTER</a>
         </div>
-
+        
         <div class="hero_items">
             <ul class="list-unstyled">
                 <li>About us</li>
@@ -91,48 +108,50 @@
             </ul>
         </div>
         <div class="hiro-callToAction">
-            <button class="btn btn-subir">¡Sube tu anuncio!</button>
+            <button class="btn btn-subir py-2 px-4 fw-bold">
+                ¡Sube tu anuncio!
+            </button>
         </div>
     </div>
-
+    
     <!-- informaciones generales -->
     <div class="container my-5 py-5">
         <div class="row justify-content-end">
             <div class="col-12 col-md-10 mb-5">
-               <div class="row">
-                   <div class="col-12 col-md-9">
-                       <div class="row">
-                           <div class="col-12 col-md-4">
-                            <div class="card border-0 rounded-0 card-features">
-                                <div class="card-body">
-                                  <h5 class="card-title fw-bold">Muchas oportunidades</h5>
-                                  <p class="card-text small text-secondary">Todos los compradores y vendedores, juntos en una sola plataforma, para que te sea mucho más fácil encontrar lo que buscas.</p>
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="card border-0 rounded-0 card-features">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Muchas oportunidades</h5>
+                                        <p class="card-text small text-secondary">Todos los compradores y vendedores, juntos en una sola plataforma, para que te sea mucho más fácil encontrar lo que buscas.</p>
+                                    </div>
                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12 col-md-4">
-                            <div class="card border-0 rounded-0 card-features">
-                                <div class="card-body">
-                                  <h5 class="card-title fw-bold">Nuevas funcionalidades</h5>
-                                  <p class="card-text small text-secondary">Gestionas tu cuenta con unos simples clicks. Puedes chatear con otros usuarios, guardar tus favoritos o crear alertas de lo que te interesa.</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card border-0 rounded-0 card-features">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Nuevas funcionalidades</h5>
+                                        <p class="card-text small text-secondary">Gestionas tu cuenta con unos simples clicks. Puedes chatear con otros usuarios, guardar tus favoritos o crear alertas de lo que te interesa.</p>
+                                    </div>
                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12 col-md-4">
-                            <div class="card border-0 rounded-0 card-features">
-                                <div class="card-body">
-                                  <h5 class="card-title fw-bold">Envíos fáciles y cómodos</h5>
-                                  <p class="card-text small text-secondary">Compra y vende de forma segura sin moverte de casa, o bien lleva tú mismo el producto a Correos. Tú eliges como enviar tus productos.</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card border-0 rounded-0 card-features">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Envíos fáciles y cómodos</h5>
+                                        <p class="card-text small text-secondary">Compra y vende de forma segura sin moverte de casa, o bien lleva tú mismo el producto a Correos. Tú eliges como enviar tus productos.</p>
+                                    </div>
                                 </div>
-                              </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    
     <div class="container my-5 py-5">
         <div class="row justify-content-end">
             <!-- timer online -->
@@ -170,12 +189,12 @@
                         </div>
                     </div>
                 </div>
-
-
+                
+                
             </div>
         </div>
     </div>
-
+    
     <!--  mostrar categorías -->
     <div class="container my-5 py-5">
         <div class="row mb-5">
@@ -191,50 +210,76 @@
             </div>
         </div>
     </div>
-
-
+    
+    
     <!-- articulos -->
     <div class="container my-5 py-5">
-        <div class="row justify-content-end">
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <h2>Busca entre los más baratos</h2>
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-end">
             <div class="col-12 col-md-10">
-
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    
+                    
+                </div>
             </div>
         </div>
     </div>
-
+    
+    
+    
+    
+    
+    
     <!-- cta para agregar anuncio -->
     <div class="container-fluid my-5 py-5 cover">
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-12 text-center">
-                    <h4 class="fs-1 fw-bold texto-subir">¡SUBE TU ANUNCIO!</h4>
-                    <button class="btn btn-subir fw-bold px-4">¡Súbelo!</button>
+                <h4 class="fs-1 fw-bold texto-subir">¡SUBE TU ANUNCIO!</h4>
+                <button class="btn btn-subir fw-bold px-4">¡Súbelo!</button>
             </div>
         </div>
     </div>
-
-
+    
+    
     <!-- footer -->
-    <div class="container my-5 py-5">
+    <div class="container my-3 py-3">
         <div class="row justify-content-end">
             <div class="col-12 col-md-10">
-                <div class="row">
-                    <div class="col-12 col-md-4 justify-content-center d-flex flex-column text-center">
-                        <img class="w-25 mx-auto" src="./media/arrow-right.png" alt="">
-                        <h3 class="fw-bold" >Rápido </h3>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4">
+                        <div class="text-center text-lg-start">
+                            <img src="./media/arrow-right.png" width="60" alt="">
+                            <h3 class="fw-bold" >Rápido </h3>
+                        </div>
                     </div>
                     <div class="col-12 text-center text-md-start col-md-4 my-5">
-                            <h5 class="fw-bold">Datos de contacto</h5>
-                            <ul class="ps-0" style="list-style: none;">
-                                <li>Dirección: C/Alcalá 13, Bajo</li>
-                                <li>Teléfono: <a class="blue-links" href="tel:+34678567876"><i class="bi bi-whatsapp"></i> +34 995178058</a></li>
-                                <li>Correo: <a class="blue-links" href="mailto: info@rapido.es">info@mailto.es</a></li>
-                            </ul>
+                        <h5 class="fw-bold mb-0">Datos de contacto</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>Dirección: C/Alcalá 13, Bajo</li>
+                            <li>Teléfono: <a class="blue-links" href="tel:+34678567876"><i class="bi bi-whatsapp"></i> +34 995178058</a></li>
+                            <li>Correo: <a class="blue-links" href="mailto: info@rapido.es">info@mailto.es</a></li>
+                        </ul>
                     </div>
-                    <div class="col-12 col-md-4 d-flex justify-content-between align-items-center">
-                            <i class="bi bi-facebook fs-2"></i>
-                            <i class="bi bi-instagram fs-2"></i>
-                            <i class="bi bi-twitter fs-2"></i>
-                            <i class="bi bi-linkedin fs-2"></i>
+                    <div class="col-12 col-md-4 d-flex justify-content-around align-items-center">
+                        <a href="" class="text-decoration-none text-reset">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="" class="text-decoration-none text-reset">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="" class="text-decoration-none text-reset">
+                            <i class="bi bi-twitter fs-4"></i>
+                        </a>                      
+                        <a href="" class="text-decoration-none text-reset">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>   
                     </div>
                 </div>
             </div>
@@ -242,77 +287,149 @@
     </div>
     
     
-
-
-
-
+    
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <!-- CDN a la biblioteca gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="./main.js"></script>
-    <!--  Javascript Home Page -->
-    <script>
-        //leer anuncios dentro de anuncios.json **
-        //obtener los datos **
-        //filtrar las categorías 
-        //crear columna basándonos en las categorías que tenemos
-
-        fetch("./anuncios.json").then(response => response.json())
-            .then(datos => {
-                let categorias = Array.from(new Set(datos.map(el => el.category_name)))
-                let category_wrapper = document.querySelector("#category_wrapper")
-                categorias.forEach(element => {
-                    let col = document.createElement("div")
-                    col.classList.add("col-6", "col-md-6", "mb-4")
-                    col.innerHTML = `  
-                        <div class="card card_category subrayado mx-auto border-0 rounded-0 shadow ">
-                            <div class="card-body text-center ">
-                                <p class="card-title fw-bold mb-0">${element}</p>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<!-- CDN a la biblioteca gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="./main.js"></script>
+<!--  Javascript Home Page -->
+<script>
+    //leer anuncios dentro de anuncios.json **
+    //obtener los datos **
+    //filtrar las categorías 
+    //crear columna basándonos en las categorías que tenemos
+    
+    fetch("./anuncios.json").then(response => response.json())
+    .then(datos => {
+        
+        // manipulacion para las categorias
+        
+        let categorias = Array.from(new Set(datos.map(el => el.category_name)))
+        let category_wrapper = document.querySelector("#category_wrapper")
+        categorias.forEach(element => {
+            let col = document.createElement("div")
+            col.classList.add("col-6", "col-md-6", "mb-4")
+            col.innerHTML = `  
+            <div class="card card_category subrayado mx-auto border-0 rounded-0 shadow ">
+                <div class="card-body text-center ">
+                    <p class="card-title fw-bold mb-0">${element}</p>
+                </div>
+            </div>
+            `
+            category_wrapper.appendChild(col)
+        })
+        
+        // manipulacion para los articulos 
+        // task individuar las 4 categorias con mas anuncios 
+        
+        let category = datos.map(el => el.category_name)
+        let occurencies = category.reduce((acc, cate) => {
+            if (acc[cate]) {
+                acc[cate] += 1
+            } else {
+                acc[cate] = 1
+            }
+            return acc
+        }, {})
+        
+        let convertidorObjectToArray = Object.entries(occurencies);
+        let ordenados = convertidorObjectToArray.sort((a,b) => b[1] - a[1]).slice(0,4).map(x => x[0])
+       
+        
+        // manipulacion DOM
+        let pills_tab = document.querySelector('#pills-tab');
+        ordenados.forEach((categoria, index) => {
+            let li = document.createElement('li')
+            li.classList.add("nav-item", "mx-3")
+            li.innerHTML = `
+            <button class="nav-link fw-bold fs-5 ${index == 0 ? 'active': ''}" id="pills-${categoria}-tab" data-bs-toggle="pill" data-bs-target="#pills-${categoria}" type="button" role="tab" aria-controls="pills-${categoria}" aria-selected="true">${categoria.charAt(0).toUpperCase() + categoria.slice(1)}</button>
+            `
+            pills_tab.appendChild(li)
+            
+            
+            let filterByCategoria = datos.filter(el => el.category_name == categoria).sort((a,b) => a.price - b.price).slice(0,4)
+            
+            // manipulacion del DOM
+            let pills_tabContent = document.querySelector('#pills-tabContent');
+            let contendor = `<div class="container"><div class="row">`
+                let cierreContenedor = ` </div></div>`
+                let cardArticulo = filterByCategoria.map(el => {
+                    return `
+                    <div class="col-12 col-lg-3">
+                        <div class="card border-0 shadow card-article">
+                            <img src="https://picsum.photos/180/150" class="card-img-top" alt="https://picsum.photos/200">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">${el.product_name.substring(0,10)}[..]</h5>
+                                <p class="card-text">
+                                    <a href="" class="text-decoration-none text-reset">${el.category_name}</a>
+                                </p>
+                                <p class="fw-bold">Price: ${el.price} €</p>
+                                <a href="#" class="btn btn-subir">Detalle</a>
                             </div>
                         </div>
-                        `
-                    category_wrapper.appendChild(col)
+                    </div>                   
+                    `
+                }).join("")
+                
+                /* <div class="tab-pane fade show active" id="pills-home" role="tabpanel"         aria-labelledby="pills-home-tab"> */
+                    let div = document.createElement('div')
+                    div.classList.add('tab-pane', 'fade')
+                    if(index == 0) {
+                        div.classList.add('show', 'active')
+                    } 
+                    div.setAttribute('id', `pills-${categoria}`)
+                    div.innerHTML = `${contendor + cardArticulo + cierreContenedor}`
+                    
+                    pills_tabContent.appendChild(div)
                 })
+                
+                
+                
+                
+                
             })
-
-
-
-        // Timer
-        let days_timer = document.querySelector("#days_timer");
-        let hours_timer = document.querySelector("#hours_timer");
-        let minutes_timer = document.querySelector("#minutes_timer");
-        let seconds_timer = document.querySelector("#seconds_timer");
-
-
-        setInterval(timer,1000)
-
-
-        function timer() {
-        const final_time = new Date(2022, 5, 30);
-        const today = new Date();
-        const diferencia = final_time - today;
-
-        //Conversiones
-        let seconds = Math.floor(diferencia / 1000 % 60);
-        let minutes = Math.floor(diferencia / (1000 * 60) % 60);
-        let hours = Math.floor(diferencia / (1000 * 60 * 60) % 24);
-        let days = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-
-        days_timer.innerHTML = days;
-        hours_timer.innerHTML = hours;
-        minutes_timer.innerHTML = minutes;
-        seconds_timer.innerHTML = seconds;
-
-        //Mensaje Final
-
-
+            
+            
+            
+            // Timer
+            let days_timer = document.querySelector("#days_timer");
+            let hours_timer = document.querySelector("#hours_timer");
+            let minutes_timer = document.querySelector("#minutes_timer");
+            let seconds_timer = document.querySelector("#seconds_timer");
+            
+            
+            setInterval(timer,1000)
+            
+            
+            function timer() {
+                const final_time = new Date(2022, 5, 30);
+                const today = new Date();
+                const diferencia = final_time - today;
+                
+                //Conversiones
+                let seconds = Math.floor(diferencia / 1000 % 60);
+                let minutes = Math.floor(diferencia / (1000 * 60) % 60);
+                let hours = Math.floor(diferencia / (1000 * 60 * 60) % 24);
+                let days = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                
+                days_timer.innerHTML = days;
+                hours_timer.innerHTML = hours;
+                minutes_timer.innerHTML = minutes;
+                seconds_timer.innerHTML = seconds;
+                
+                //Mensaje Final
+                
+                
+                
+            }
+        </script>
         
-        }
-    </script>
-
-</body>
-
-
-</html>
+    </body>
+    
+    
+    </html>

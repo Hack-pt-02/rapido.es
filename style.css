@@ -15,6 +15,31 @@
     background-position: center;
 }
 
+.hero-pagina-anuncio {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero_logo_anuncio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    z-index: 9999;
+}
+
+.hero_admin_anuncio {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    z-index: 9999;
+}
+
+
 @media (max-width: 768px) {
     .hero {
         height: 100vh;
@@ -127,6 +152,19 @@
     background-repeat: no-repeat;
     color: coral;
 }
+
+.cover-anuncio {
+    height: 60vh;
+    width: 100%;
+    background-image: url('./media/fondo4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: coral;
+}
+
+
+
 .texto-subir {
     margin-top: 100px;
     text-shadow: 3px 3px 8px black;
@@ -208,4 +246,10 @@
 .blue-links {
     text-decoration: none;
     color: black;
+}
+
+.info-vendedor {
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
 }
