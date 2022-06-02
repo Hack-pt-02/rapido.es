@@ -3,7 +3,7 @@
 ## INDEX.HTML
 
 * comprobar que sea todo responsive [x]
-    * revisar la fecha oferta [ ]   
+    * revisar la fecha oferta [x]   
 * team en home-page (index.html) [ ]
 * implementar login sidebar [ ]
 
