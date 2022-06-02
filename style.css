@@ -196,7 +196,29 @@
         transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
     }
 }
+#loginSidebar {
+    height: 100vh;
+    width: 50%;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
 
+@media (max-width: 768px) {
+    #loginSidebar {
+        height: 100vh;
+        width: 100%;
+        background-color: whitesmoke;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 1;
+        transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+    }
+}
 .active {
     right: 0% !important;
     

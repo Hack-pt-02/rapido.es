@@ -1,11 +1,10 @@
 # TASK 02/06
 
 ## INDEX.HTML
-
 * comprobar que sea todo responsive [x]
     * revisar la fecha oferta [x]   
-* team en home-page (index.html) [ ]
-* implementar login sidebar [ ]
+* team en home-page (index.html) [x]
+* implementar login sidebar [x]
 
 ## ANUNCIO.HTML
 

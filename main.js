@@ -22,6 +22,21 @@
             e.preventDefault();
             sideBar.classList.remove('active')
         })
+
+        //login 
+
+        let login = document.querySelector('#toggleLogin');
+        let loginSidebar = document.querySelector('#loginSidebar');
+       login.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginSidebar.classList.add('active')
+        })
+        
+        let closeLogin = document.querySelector('#closeLogin');
+        closeLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+        loginSidebar.classList.remove('active')
+        })
         
         //Primer uso de biblioteca gsap
         gsap.to(".hero_title",{
