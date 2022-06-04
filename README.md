@@ -2,8 +2,8 @@
 
 ## ANUNCIO_REVISOR.HTML
 
-* subir más informaciones vendedor [ ]
-* mostrar más imagenes articulo ( en tarjetas, carousel, etc... ) [ ]
+* subir más informaciones vendedor [x]
+* mostrar más imagenes articulo ( en tarjetas, carousel, etc... ) [x]
 * mostrar articulos asociados a la misma categoria [ ]
 
 ## ANUNCIO.HTML

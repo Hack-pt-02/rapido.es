@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
 
 * {
-    font-family: 'Inter', sans-serif;    
+    font-family: 'Inter', sans-serif;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
@@ -9,7 +9,7 @@
     height: 80vh;
     width: 100%;
     position: relative;
-    background:url('./media/fondo.jpeg');
+    background: url('./media/fondo.jpeg');
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
@@ -45,7 +45,7 @@
         height: 100vh;
         width: 100%;
         position: relative;
-        background:url('./media/fondo.jpeg');
+        background: url('./media/fondo.jpeg');
         background-repeat: no-repeat;
         background-size: 70%;
         background-position: center;
@@ -109,7 +109,7 @@
         left: 10%;
         opacity: 0;
     }
-    
+
     .hero_description {
         position: absolute;
         bottom: 30%;
@@ -169,10 +169,12 @@
     margin-top: 100px;
     text-shadow: 3px 3px 8px black;
 }
+
 .btn-subir {
     background-color: coral;
     color: white;
 }
+
 #registerSidebar {
     height: 100vh;
     width: 50%;
@@ -196,6 +198,7 @@
         transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
     }
 }
+
 #loginSidebar {
     height: 100vh;
     width: 50%;
@@ -219,12 +222,13 @@
         transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
     }
 }
+
 .active {
     right: 0% !important;
-    
+
 }
 
-.card-search {
+.card-search {
     background-color: #fff;
 }
 
@@ -232,28 +236,30 @@
     border-left: 2px solid coral !important;
 }
 
-.card_category{
+.card_category {
     width: 12rem;
     cursor: pointer;
 }
 
-.subrayado{
+.subrayado {
     /* border-bottom: 3px solid coral !important; */
     background-image: linear-gradient(coral, coral);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 3px;
     transition: .2s;
-      
+
 
 }
-.subrayado:hover, .subrayado:focus{
+
+.subrayado:hover,
+.subrayado:focus {
     background-size: 100% 2px;
     transition: .3s;
-    
+
 }
-    
-.card_timer{
+
+.card_timer {
     width: 120px;
     height: 120px;
     border-radius: 10px;
@@ -273,13 +279,15 @@
 .info-vendedor {
     height: 500px;
     width: 300px;
-    border-top: 5px solid coral ;
+    border-top: 5px solid coral;
     border-radius: 20px;
     padding: 20px;
 }
+
 .coral {
     color: coral;
 }
+
 .btn-vendedor {
     background-color: coral;
     color: white;
@@ -297,4 +305,15 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
+}
+
+/* SWIPER CSS STYLES */
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, coral);
 }
