@@ -272,10 +272,29 @@
 
 .info-vendedor {
     height: 500px;
-    width: 400px;
-    border: 1px solid black;
+    width: 300px;
+    border-top: 5px solid coral ;
+    border-radius: 20px;
+    padding: 20px;
 }
 .coral {
     color: coral;
 }
- 
+.btn-vendedor {
+    background-color: coral;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    background-image: url("./media/avatar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
