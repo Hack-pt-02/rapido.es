@@ -1,16 +1,23 @@
-# TASK 02/06
+# TASK 04/06
 
-## INDEX.HTML
-* comprobar que sea todo responsive [x]
-    * revisar la fecha oferta [x]   
-* team en home-page (index.html) [x]
-* implementar login sidebar [x]
-
-## ANUNCIO.HTML
+## ANUNCIO_REVISOR.HTML
 
 * subir más informaciones vendedor [ ]
 * mostrar más imagenes articulo ( en tarjetas, carousel, etc... ) [ ]
 * mostrar articulos asociados a la misma categoria [ ]
+
+## ANUNCIO.HTML
+
+* duplicar anunucio_revisor sin informaciones google [ ]
+
+## PRODUCTO.HTML 
+
+* formulario para agregar un articulo [ ]
+
+## TODO_LOS_ARTICULOS.HTML
+
+* mostrar todos los articulos disponibles en plataforma [ ]
+
 
 
 
