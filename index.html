@@ -417,12 +417,13 @@
                 categorias.forEach(element => {
                     let col = document.createElement("div")
                     col.classList.add("col-6", "col-md-6", "mb-4")
+                    // esto de abajo está genial, pero no podemos individualizar el enlace a la página cars, todas las categorías llevan a cars.
                     col.innerHTML = `  
-            <div class="card card_category subrayado mx-auto border-0 rounded-0 shadow ">
+            <a class="card card_category subrayado mx-auto border-0 rounded-0 shadow text-decoration-none text-reset" href="./cars.html">
                 <div class="card-body text-center ">
-                    <p class="card-title fw-bold mb-0">${element}</p>
+                    <p class="card-title fw-bold mb-0 ">${element}</p>
                 </div>
-            </div>
+            </a>
             `
                     category_wrapper.appendChild(col)
                 })

@@ -5,6 +5,10 @@
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+.anchor_remove {
+    font-style: none;
+}
+
 .hero {
     height: 80vh;
     width: 100%;
@@ -316,4 +320,20 @@
 .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
     background: var(--swiper-pagination-color, coral);
+}
+
+/* CARS PAGE */
+
+.cab-cars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    height: 100px;
+}
+
+.cab-cars h1 {
+    font-size: 3em;
+    font-family: inter;
+    color: white;
 }
