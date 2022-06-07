@@ -325,6 +325,7 @@
 /* CARS PAGE */
 
 .cab-cars {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,7 +334,12 @@
 }
 
 .cab-cars h1 {
+    margin: 0px;
     font-size: 3em;
     font-family: inter;
     color: white;
+}
+.icon-return {
+    position: absolute;
+    left: 30px
 }
