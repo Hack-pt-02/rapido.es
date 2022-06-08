@@ -10,7 +10,8 @@
 
 * subir más informaciones vendedor [x]
 * mostrar más imagenes articulo ( en tarjetas, carousel, etc... ) [x]
-* mostrar articulos asociados a la misma categoria [ ]
+* mostrar articulos asociados a la misma categoria [x]
+    * hemos creado un href con una interpolación en la que cada vez que carga una etiqueta también le pone su nombre dentro del href. Está en la linea 420 del index.html
 * Colorear barras Google Vision api [x]
 
 ## ANUNCIO.HTML
