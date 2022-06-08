@@ -1,3 +1,10 @@
+# TAREAS 08/06
+
+* Creadas todas las páginas, una para cada categoría, y guardadas en una carpeta llamada categories.
+* Rellenado de cada una de las categorías con sus respectivos productos, siguiendo el patrón de la primera que creamos, que fue car.
+* Eliminados los archivos residuales.
+* Centrada la sección de "busca entre los más baratos" y realizado el responsive en los botónes de "busca entre las categorías".
+
 # TAREAS 06/06
 
 * Colorear las barras de progresión de la página anuncioRevisor.html, utilizando una interpolación con un operador ternario.
