@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Subir Anuncio</title>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 cab-cars">
+                <i class="icon-return">
+                    <a href="../index.html">
+                        <i class="bi bi-arrow-left-circle-fill text-white fs-3">
+                        </i>
+                </i>
+                </a>
+                <h1>¡Sube tu anuncio!</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6 fw-bold">
+            <!-- addArticle Form -->
+            <form>
+                <!-- product name -->
+                <div class="label-container">
+                    <label class="label-add" for="product_name">Nombre del producto</label>
+                    <input id="product_name" type="text" placeholder="Nombre del producto">
+                </div>
+                <!-- categories -->
+                <div class="label-container">
+                    <label class="label-add" for="category_name">Categoría</label>
+                    <select name="categories" id="category_name">
+                        <option value="clothes">Clothes</option>
+                        <option value="books">Books</option>
+                        <option value="car">Car</option>
+                        <option value="shop">Shop</option>
+                        <option value="motorbike">Motorbike</option>
+                        <option value="sport">Sport</option>
+                        <option value="technology">Technology</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="home">Home</option>
+                    </select>
+                </div>
+                <!-- product description -->
+                <div class="label-container">
+                    <label class="label-add" for=" product_desc">Descripción del producto</label>
+                    <textarea id="product_desc" placeholder="Descripción del producto"></textarea>
+                </div>
+                <!-- price -->
+                <div class="label-container">
+                    <label class="label-add" for="price">Precio</label>
+                    <input id="price" type="number" placeholder="Precio">
+                </div>
+                <!-- number phone -->
+                <div class="label-container">
+                    <label class="label-add" for="phone">Teléfono</label>
+                    <input id="phone" type="tel" placeholder="Teléfono">
+                </div>
+                <!-- email -->
+                <div class="label-container">
+                    <label class="label-add" for="email">Correo electrónico</label>
+                    <input value="emiliovm@outlook.es" id="email" type="mail" placeholder="email">
+                </div>
+                <div class="label-container d-flex justify-content-center my-3">
+                    <button id="btn_add" class="btn btn-subir" type="submit">Subir artículo</button>
+                </div>
+            </form>
+            </div>
+            <div id="articles" class="col-6">
+                <h1>¿Como quedará la infromación?</h1>
+            <!-- Contenedor de prueba de la carga de productos -->
+
+            </div>
+        </div>
+    </div>
+    <script>
+        //Llamado a todos los campos
+        let product_name = document.querySelector('#product_name')
+        console.log(product_name.value)
+        let category_name = document.querySelector('#category_name')
+        let product_desc = document.querySelector('#product_desc')
+        console.log(product_desc)
+        let price = document.querySelector('#price')
+        let phone = document.querySelector('#phone')
+        let email = document.querySelector('#email')
+
+        let contResult = document.querySelector("#articles")
+        
+        let arrayResultado = []
+        let firstIndex = 100 // esto lo pongo para que ponga el id desde el último añadido y le valla incrementando conforme añadamos elementos
+        // Evento del boton que caga la información en un arrayResultado
+
+        let hoy = new Date();
+        let dia = hoy.getDate();
+        let mes = hoy.getMonth();
+        let anio = hoy.getFullYear()
+        let today = dia + "/" + mes + "/" + anio
+
+        console.log(Today)
+        let btn = btn_add.addEventListener('click', (e) => {
+            e.preventDefault()
+            let array = {
+                    id: firstIndex ++,
+                    product_name: product_name.value,
+                    category_name: category_name.value,
+                    product_desc: product_desc.value,
+                    price: price.value,
+                    phone: phone.value,
+                    email: email.value,
+                    date: new Date.gettime(),
+                    }
+            let jsonArray = JSON.stringify(array)
+            arrayResultado.push(jsonArray)
+            console.log(arrayResultado)
+            contResult.innerHTML = jsonArray
+        })
+
+    </script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+# TAREAS 09/06
+
+* Creada la página addArticle.html para poder subir los artículos.
+* Creado dentro de ella un formulario para poder introducir todos los campos que estan en el array
+
 # TAREAS 08/06
 
 * Creadas todas las páginas, una para cada categoría, y guardadas en una carpeta llamada categories.

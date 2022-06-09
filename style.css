@@ -343,3 +343,13 @@
     position: absolute;
     left: 30px
 }
+
+/* addArticle */
+
+.label-add {
+    width: 200px;
+}
+
+.label-container {
+    margin-top: 10px;
+}
