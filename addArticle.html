@@ -108,6 +108,7 @@
         let firstIndex = 100 // esto lo pongo para que ponga el id desde el último añadido y le valla incrementando conforme añadamos elementos
         // Evento del boton que caga la información en un arrayResultado
 
+        // intentando poner la fecha actual para añadirla a la información
         let hoy = new Date();
         let dia = hoy.getDate();
         let mes = hoy.getMonth();
@@ -124,8 +125,7 @@
                     product_desc: product_desc.value,
                     price: price.value,
                     phone: phone.value,
-                    email: email.value,
-                    date: new Date.gettime(),
+                    email: email.value
                     }
             let jsonArray = JSON.stringify(array)
             arrayResultado.push(jsonArray)

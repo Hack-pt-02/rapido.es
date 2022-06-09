@@ -1,7 +1,9 @@
 # TAREAS 09/06
 
 * Creada la página addArticle.html para poder subir los artículos.
-* Creado dentro de ella un formulario para poder introducir todos los campos que estan en el array
+* Creado dentro de ella un formulario para poder introducir todos los campos que estan en el array.
+* añadida toda la funcionalidad el boton para que pueda almacenar la información como JSON.
+* FALTA que pueda guardar la información.
 
 # TAREAS 08/06
 
