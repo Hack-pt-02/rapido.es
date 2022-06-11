@@ -84,7 +84,7 @@
                 </div>
             </form>
             </div>
-            <div id="articles" class="col-6">
+            <div id="articles" class="col-12 col-md-6">
                 <h1>¿Como quedará la infromación?</h1>
             <!-- Contenedor de prueba de la carga de productos -->
 
@@ -92,19 +92,19 @@
         </div>
     </div>
     <script>
-        //Llamado a todos los campos
+        let arrayResultado = []
+        fetch("./anuncios.json")
+        .then(response => response.json())
+        .then(data => {
+            //Llamado a todos los campos
         let product_name = document.querySelector('#product_name')
-        console.log(product_name.value)
         let category_name = document.querySelector('#category_name')
         let product_desc = document.querySelector('#product_desc')
-        console.log(product_desc)
         let price = document.querySelector('#price')
         let phone = document.querySelector('#phone')
         let email = document.querySelector('#email')
-
         let contResult = document.querySelector("#articles")
         
-        let arrayResultado = []
         let firstIndex = 100 // esto lo pongo para que ponga el id desde el último añadido y le valla incrementando conforme añadamos elementos
         // Evento del boton que caga la información en un arrayResultado
 
@@ -113,11 +113,9 @@
         let dia = hoy.getDate();
         let mes = hoy.getMonth();
         let anio = hoy.getFullYear()
-        let today = dia + "/" + mes + "/" + anio
-
-        console.log(Today)
         let btn = btn_add.addEventListener('click', (e) => {
             e.preventDefault()
+            console.log("funciona")
             let array = {
                     id: firstIndex ++,
                     product_name: product_name.value,
@@ -127,12 +125,13 @@
                     phone: phone.value,
                     email: email.value
                     }
-            let jsonArray = JSON.stringify(array)
-            arrayResultado.push(jsonArray)
-            console.log(arrayResultado)
-            contResult.innerHTML = jsonArray
+            let jsonArray = JSON.stringify(array);
+            // el siguiente comando muestra la información en la columna de al lado de la página
+            contResult.innerHTML = `${jsonArray}`;
+            //debería de cargar los datos, y de hecho los carga pero se eliminan al recargar la página
+            //data.push(jsonArray);
         })
-
+        })
     </script>
 </body>
 </html>

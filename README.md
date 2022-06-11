@@ -1,3 +1,9 @@
+# TAREAS 12/06
+
+* Terminado el formulario para cargar nuevos productos y su funcionamiento, el cual ya devuelve un JSON, solo falta tener una base de datos donde cargar los datos.
+* Añadida página e la que se muestran todos los productos, sin ningún tipo de orden ni nada parecido, simplemente ahí, pum.
+* Añadido botón flotante en el index.html que nos redirige a la página de todos los productos.
+
 # TAREAS 09/06
 
 * Creada la página addArticle.html para poder subir los artículos.
@@ -34,11 +40,11 @@
 
 ## PRODUCTO.HTML 
 
-* formulario para agregar un articulo [ ]
+* formulario para agregar un articulo [x]
 
 ## TODO_LOS_ARTICULOS.HTML
 
-* mostrar todos los articulos disponibles en plataforma [ ]
+* mostrar todos los articulos disponibles en plataforma [x]
 
 
 

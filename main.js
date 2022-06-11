@@ -38,6 +38,15 @@
             loginSidebar.classList.remove('active')
         })
 
+        // btn subir productos flotante
+        let btnAllArticles = document.querySelector(".btnAllProducts");
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 500) {
+                btnAllArticles.style.animation = "fadeBtn 1.5s ease-in-out forwards "
+
+            }
+        })
+
         //Primer uso de biblioteca gsap
         gsap.to(".hero_title", {
             y: 20,
